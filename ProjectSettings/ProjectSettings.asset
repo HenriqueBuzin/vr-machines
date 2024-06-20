@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 20
-  productGUID: 20e6651b93202d24c8eb14fb39681df0
+  productGUID: 6a75a366c25102a4d82a68fd80f54a47
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: vr-machines-github
+  productName: My project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -693,9 +693,9 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 74c4c0a8-8505-4170-abaa-101ea143d9c1
+  cloudProjectId: cf5baf18-5f8d-406a-ab9e-c2b9acbc54c1
   framebufferDepthMemorylessMode: 0
-  projectName: vr-machines-github
+  projectName: My project 2024-06-15_00-20-39
   organizationId: unity_tsblu5dswo2gcg
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

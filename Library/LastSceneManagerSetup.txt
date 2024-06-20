@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/vr-machines.unity
+- path: Assets/vuforia.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

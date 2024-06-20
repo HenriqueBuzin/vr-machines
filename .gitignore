@@ -70,3 +70,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Include Vuforia specific folders
+!Assets/Vuforia/
+!Assets/Editor/QCAR/
+!Assets/StreamingAssets/QCAR/
+
+# Include AR Camera and Image Target folders
+!Assets/Scenes/
+!Assets/Resources/

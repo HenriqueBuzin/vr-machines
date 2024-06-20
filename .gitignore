@@ -79,3 +79,6 @@ crashlytics-build.properties
 # Include AR Camera and Image Target folders
 !Assets/Scenes/
 !Assets/Resources/
+
+# Ensure .unity files are not ignored
+!*.unity

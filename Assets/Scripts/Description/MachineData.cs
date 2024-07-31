@@ -6,10 +6,12 @@ public class MachineData
 {
     public int id;
     public string machineName;
-    public string maxCurrent;
-    public string maxVoltage;
-    public string minCurrent;
-    public string minVoltage;
+    public float maxCurrent;
+    public float maxVoltage;
+    public float minCurrent;
+    public float minVoltage;
+    public List<float> currentData;
+    public List<float> voltageData;
 }
 
 [System.Serializable]

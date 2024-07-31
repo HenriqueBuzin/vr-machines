@@ -6,7 +6,6 @@ public class MachineDataLoader : MonoBehaviour
 {
     public Text machineInfoText;
     public int selectedMachineId;
-
     private List<MachineData> machineDataList;
 
     void Start()
@@ -37,10 +36,24 @@ public class MachineDataLoader : MonoBehaviour
         if (selectedMachine != null)
         {
             machineInfoText.text = $"Máquina: {selectedMachine.machineName}\n" +
-                                   $"Corrente Máxima: {selectedMachine.maxCurrent}\n" +
-                                   $"Tensão Máxima: {selectedMachine.maxVoltage}\n" +
-                                   $"Corrente Mínima: {selectedMachine.minCurrent}\n" +
-                                   $"Tensão Mínima: {selectedMachine.minVoltage}";
+                                   $"Corrente Máxima: {selectedMachine.maxCurrent} A\n" +
+                                   $"Tensão Máxima: {selectedMachine.maxVoltage} V\n" +
+                                   $"Corrente Mínima: {selectedMachine.minCurrent} A\n" +
+                                   $"Tensão Mínima: {selectedMachine.minVoltage} V";
+
+            // Exibir gráficos de corrente e tensão
+            var voltageGraph = FindObjectOfType<VoltageGraph>();
+            var currentGraph = FindObjectOfType<CurrentGraph>();
+
+            if (voltageGraph != null)
+            {
+                voltageGraph.DisplayVoltageGraph(selectedMachine.voltageData, selectedMachine.maxVoltage, selectedMachine.machineName);
+            }
+
+            if (currentGraph != null)
+            {
+                currentGraph.DisplayCurrentGraph(selectedMachine.currentData, selectedMachine.maxCurrent, selectedMachine.machineName);
+            }
         }
         else
         {
